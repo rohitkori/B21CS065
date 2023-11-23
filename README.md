@@ -242,6 +242,19 @@ Prevents race conditions and maintains consistency.
 Coordinates process execution and ensures orderly resource access.
 
 #### Answer 18
+Interrupts in XV6:
+
+Role:
+Enable asynchronous handling of external events in XV6.
+
+Handling:
+Interrupt Vector Table (IVT) directs to Interrupt Service Routines (ISRs).
+ISRs in the Interrupt Descriptor Table (IDT) handle specific interrupts.
+
+Significance:
+Enhances system efficiency and responsiveness.
+Facilitates multitasking and device interaction.
+Supports real-time systems.
 
 #### Answer 19
 Implementation in XV6:
