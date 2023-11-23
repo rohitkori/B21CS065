@@ -117,3 +117,112 @@ Welcome to the XV Quiz for CSL 3030 - Operating Systems!
 
 ## Answers
 Please write your answers here
+
+#### Answer 1:
+b. A Unix-like operating system
+
+#### Answer 2:
+c. BSD
+
+#### Answer 3:
+d. simple
+
+#### Answer 4:
+b. As interrupts
+
+#### Answer 5:
+a. 128
+
+#### Answer 6:
+c. sh
+
+#### Answer 7:
+a. Round-robin scheduling
+
+#### Answer 8:
+a. Paging
+
+#### Answer 9:
+d. Both b and c
+
+#### Answer 10:
+b. No
+
+#### Answer 11:
+c. MIT
+
+#### Answer 12:
+
+In XV6, a process can be in the following states:
+ - Unused: unused or terminated.
+ - Embryonic : initialized.
+ - Sleeping: Waiting for an event.
+ - Runnable : Ready to run but waiting for CPU time.
+ - Running : executing on the CPU.
+ - Zombie: Terminated but have exit status information until retrieved by the parent process.
+
+#### Answer 13
+
+The XV6 file system has a simple structure:
+- Superblock: Metadata of the file system.
+- Inode: Metadata of each file or directory.
+- Data blocks: Store actual file content.
+- Directory structure: Maps names to inode numbers.
+- File allocation table: Manages block allocation status.
+
+#### Answer 14
+In XV6:
+
+System Calls:
+Interfaces to request services from the kernel.
+
+Examples: fork(), exec(), open().
+
+Library Functions:
+High-level routines for user-level programs.
+
+Examples: printf(), malloc(), strcmp().
+
+System calls interact directly with the kernel, while library functions provide abstractions built on top of system calls for easier programming
+
+
+#### Answer 15
+In XV6:
+
+Memory Paging:
+- memory is divided into fixed-size pages
+- A page table is maintained for mapping logical address to physical address.
+- Pages are brought from disk to main memory whenever there is a page fault.
+
+Benefits:
+- Non-contiguous allocation.
+- Facilitates efficient use of physical memory.
+- Simplifies memory management.
+- Enables easy process creation.
+- Provides isolation between processes.
+
+#### Answer 16
+`cd`:
+Usage: cd [directory]
+
+Description: Changes the current working directory. If no directory is specified, it changes to the user's home directory.
+
+`ls`:
+Usage: ls [options] [file(s)]
+
+Description: Lists the contents of a directory i.e the files and the directories present in that location. Without arguments, it lists the files and directories in the current directory.
+
+`cp`:
+Usage: cp [options] source destination
+
+Description: Copies files or directories. It can be used to duplicate files within the same directory or copy files to a different directory.
+
+#### Answer 17
+
+
+#### Answer 18
+
+#### Answer 19
+
+#### Answer 20
+
